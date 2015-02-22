@@ -1,0 +1,287 @@
+/*
+* Skeleton V1.2
+* Copyright 2011, Dave Gamache
+* www.getskeleton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 6/20/2012
+*/
+
+/* Table of Content
+==================================================
+	#Site Styles
+	#Page Styles
+	#Media Queries
+	#Font-Face */
+
+/* #Site Styles
+================================================== */
+* {
+	-webkit-box-sizing: border-box; 
+	-moz-box-sizing: border-box;    
+	box-sizing: border-box;        
+}
+
+body * {
+	font-family: 'Roboto', sans-serif !important;
+}
+
+/* header */
+.header-main {
+	background-color: #5eabb2;
+	width: 100%;
+}
+
+.header-main a {
+	text-decoration: none;
+	text-align: center;
+	letter-spacing: 7px;
+	display: block;
+}
+
+.header-main a:hover {
+	text-decoration: underline;
+}
+
+.header-main h1 {
+	margin: 35px 0;
+	font-weight: 100;
+}
+
+.search input {
+	text-align: left;
+	margin: 0 auto;
+	width: 50%;
+	line-height: 28px;
+	font-size: 21px;
+	font-weight: 300;
+}
+
+/* Content & posts */
+.content-main {
+	background-color: #f9f9f9;
+	width: 100%;
+}
+
+.post-main {
+	margin-top: 35px;
+	background-color: #fff;
+	-webkit-box-shadow: 3px 3px 2px #eee;
+	-moz-box-shadow: 3px 3px 5px #eee;
+	box-shadow: 3px 3px 5px #eee;
+}
+
+.post-title h2 {
+	margin: 0;
+	padding: 7px;
+	line-height: 125%;
+	color: #555;
+	font-weight: 300;
+}
+
+.post-title a {
+	text-decoration: none;
+}
+
+.post-title a:hover {
+	text-decoration: underline;
+	
+}
+
+.comment-counter {
+	background-color: #5eabb2;
+	margin-top: 7px;
+	padding: 7px;
+	text-align: center;
+}
+
+.comment-counter a {
+	line-height: 28px;
+	font-size: 14px;
+	font-weight: 400;
+	text-decoration: none;	
+	color: #fff;
+}
+
+.comment-counter a:hover {
+	color: #f2f2f2;
+}
+
+.author-main {
+	padding: 7px;
+}
+
+.author-main h4 {
+	color: #c4c4c4;
+	font-size: 14px;
+	font-weight: 100;
+	border-top: 3px solid #5eabb2;
+	margin: 14px 0;
+	padding: 7px 0;
+}
+
+.author-main a {
+	text-decoration: none;
+	color: #949494;
+}
+
+.author-main a:hover {
+	text-decoration: underline;
+	color: #444;
+}
+
+.post-figure img {
+	margin-bottom: 21px;
+	padding: 7px;
+	height: 250px;
+	width: 100%;
+}
+
+.post-text p {
+	padding: 14px;
+	font-size:14px;
+	line-height: 175%;
+	font-weight: 300;
+	text-align: justify;
+	margin-bottom: 0;
+}
+
+.read-more-button {
+	text-align: right;
+	padding: 14px;
+}
+
+.read-more-button a {
+	font-size: 21px;
+	font-weight: 300;
+	text-decoration: none;
+	border-bottom: 1px solid #333;
+}
+
+.read-more-button a:hover,
+.read-more-button a:active {
+	border-bottom: 1px solid #4a4a4a;
+}
+
+.pagination {
+	margin: 21px 0;
+}
+
+.pagination li {
+	text-align: center;
+	font-size: 21px;
+	line-height: 100%;
+	font-weight: 300;
+}
+
+.pagination a {
+	text-decoration: none;
+}
+
+.pagination a:hover,
+.pagination a:active {
+	border-bottom: 1px solid #333;
+}
+
+/* Sidebar */
+.sidebar-main {
+	margin-top: 35px;
+	padding: 7px;
+	background-color: #fff;
+	-webkit-box-shadow: 3px 3px 2px #eee;
+	-moz-box-shadow: 3px 3px 5px #eee;
+	box-shadow: 3px 3px 5px #eee;
+}
+
+.sidebar-main h3 {
+	padding: 7px;
+	color: #555;
+	font-weight: 300;
+	font-size: 28px;
+}
+
+.sidebar-main p,
+.sidebar-main a {
+	padding: 7px;
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 175%;
+	text-align: left;
+	text-decoration: none;
+}
+
+.sidebar-main a:hover,
+.sidebar-main a:active {
+	text-decoration: underline;
+}
+
+.sidebar-main hr {
+	margin: 0;
+}
+
+/* Footer */
+.footer-main {
+	background-color: #f9f9f9;
+	border-top: 1px solid #eee;
+}
+
+.footer-main p {
+	margin-top: 35px;
+	padding-left: 7px;
+	font-size: 14px;
+	line-height: 21px;
+}
+
+.footer-main ul {
+	list-style-type: circle;
+	padding-left: 25px;
+	margin-bottom: 35px;
+	border-right: 1px solid #eee;
+}
+
+.footer-main ul li {
+	line-height: 150%;
+}
+
+/* Bottombar */
+.bottombar {
+	background-color: #5eabb2;
+	height: 50px;
+}
+
+.bottombar p {
+	color: #fff;
+	text-align: center;
+	font-size: 14px;
+	line-height:50px;
+	margin-bottom: 0;
+}
+
+.bottombar a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.bottombar a:hover {
+	color: #e5e5e5;
+}
+
+/* #Media Queries
+================================================== */
+
+	/* Smaller than standard 960 (devices and browsers) */
+	@media only screen and (max-width: 959px) {}
+
+	/* Tablet Portrait size to standard 960 (devices and browsers) */
+	@media only screen and (min-width: 768px) and (max-width: 959px) {}
+
+	/* All Mobile Sizes (devices and browser) */
+	@media only screen and (max-width: 767px) {}
+
+	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+	@media only screen and (min-width: 480px) and (max-width: 767px) {}
+
+	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+	@media only screen and (max-width: 479px) {}
+
+

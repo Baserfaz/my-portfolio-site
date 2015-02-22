@@ -1,0 +1,611 @@
+/*
+* Skeleton V1.2
+* Copyright 2011, Dave Gamache
+* www.getskeleton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 6/20/2012
+*/
+
+/* Table of Content
+==================================================
+	#Site Styles
+	#Page Styles
+	#Media Queries
+	#Font-Face */
+
+/* #Site Styles
+================================================== */
+	/* Yleiset */
+	
+		html {
+			width: 100% !important;
+			margin: 0 !important;
+		}
+		
+		body {
+			margin: 0 !important;
+			box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			-webkit-box-sizing: border-box;
+		}
+		
+		body * {
+			font-family: 'Open Sans', sans-serif;
+			
+		}
+		
+		hr {
+			margin: 30px 0;
+			box-shadow: 0px 3px 2px -1px #eee;
+			-moz-box-shadow: 0px 3px 2px -1px #eee;
+			-webkit-box-shadow: 0px 3px 2px -1px #eee;
+		}
+		
+		p {
+			font-size: 1.5em;
+			line-height: 1.5em;
+			font-weight: 300;
+			letter-spacing: 1px;
+		}
+		
+		h1,
+		h2,
+		h3,
+		h4 {
+			color: #3d3d3d;
+		}
+		
+		h1,
+		h2 {
+			font-weight: 300;
+			line-height: 150%;
+		}
+		
+		
+		
+		h3 {
+			font-weight: 300;
+			line-height: 125%;
+		}
+		
+		h4 {
+			font-weight: 300;
+			line-height: 150%;
+			letter-spacing: 1px;
+		}
+		
+			
+	/* Inputs & buttons */
+		input[type="text"] {
+			width: 100% !important;
+			line-height: 150% !important;
+			font-weight: 300 !important;
+			font: 16px 'Open Sans', sans-serif;
+		}
+
+		button {
+			width: 100% !important;
+			line-height: 150% !important;
+			font-size: 16px !important;
+		}
+		
+		button[type="submit"] {
+			background: none;
+			background-color: #fff !important;
+			font-weight: 300;
+		}
+		
+		button[type="submit"]:hover {
+			box-shadow: inset 0 3px 2px -1px #eee;
+		}
+		
+		textarea {
+			width: 100% !important;
+			line-height: 150% !important;
+			font-size: 16px !important;
+			font-weight: 300;
+			height: 200px !important;
+			resize: none !important;
+		}
+		
+	/* MINIMALISTIC LiNKIT */
+	.minimalistic {
+		text-decoration: underlined;
+	}
+	
+		
+	/* Font Awesome */
+	.fa-star,
+	.fa-star-o,
+	.fa-star-half-o {
+		color: yellow !important;
+	}
+	
+	.fa-wordpress {
+		color: #0085be;
+	}
+	
+	.fa-archive {
+		color: #d1d1d1;
+	}
+	
+	
+	/* mainHeaderBand, logo, mainNavBar */
+		div.mainHeaderBand {
+			background: linear-gradient(#fff, #fdfdfd);
+			position: relative;
+			width: 100%;
+			z-index: 1;	
+			padding: 7px 0;
+			box-shadow: 0 3px 1px #eee;
+			-moz-box-shadow: 0 3px 1px #eee;
+			-webkit-box-shadow: 0 3px 1px #eee;
+		}
+	
+		.logo h1 {
+			position: relative;
+			color: #0f0f0f;
+			text-align: center;
+			margin: 0;
+			text-shadow: 0 4px 2px #eee;
+		}
+		
+		.logo a {
+			text-decoration: none;
+		}
+		
+		.logo:hover {
+			text-decoration: underline;
+		}
+		
+		.mainNavBar ul {
+			list-style-type: none;
+		}
+
+		.mainNavBar ul li {
+			float: right;
+			padding: 0 1em;
+			border-right: 1px solid #9f9f9f;
+		}
+		
+		.mainNavBar ul li:first-child {
+			border-right: none;
+		}
+
+		.mainNavBar ul li a {
+			color: #0f0f0f;
+			text-decoration: none;
+			font-size: 2em;
+			line-height: 150%;
+			font-weight: 300;
+			letter-spacing: 1px;
+			text-shadow: 0 4px 2px #eee;
+		}
+		
+		.mainNavBar ul li a:hover {
+			text-decoration: underline;
+		}
+	
+	/* focusText */
+		.focusText {
+			position: relative;
+		}
+	
+		.focusText h1 {
+			position: absolute;
+			right: 0;
+			left: 0;
+			top: 50px;
+			font-size: 91px;
+			line-height: 150%;
+			text-align: center;
+			color: #f9f9f9;	
+			background-color: rgba( 75, 75, 75, 0.5);
+			
+			box-shadow: 0 3px 2px -1px rgba( 100, 100, 100, .5);
+			-moz-box-shadow: 0 3px 2px -1px rgba( 100, 100, 100, .5);
+			-webkit-box-shadow: 0 3px 2px -1px rgba( 100, 100, 100, .5);
+			
+			text-shadow: 0 2px 1px #4f4f4f;
+		}
+		
+		.focusText p {
+			position: absolute;
+			right: 0;
+			left: 0;
+			top: 200px;
+			padding: 7px;
+			text-align: center;
+			font-size: 28px;
+			line-height: 150%;
+			font-weight: 300;
+			color: #f9f9f9;	
+			background-color: rgba( 75, 75, 75, 0.5);
+			
+			box-shadow: 0 3px 2px -1px rgba( 100, 100, 100, .5);
+			-moz-box-shadow: 0 3px 2px -1px rgba( 100, 100, 100, .5);
+			-webkit-box-shadow: 0 3px 2px -1px rgba( 100, 100, 100, .5);
+		}
+		
+		.focusText a {
+			text-decoration: none;
+			font-weight: 300;
+			color: #e1e1e1;	
+		}
+		
+		.focusText a:hover {
+			text-decoration: underline;
+		}
+	
+	/* PortfolioStyle */
+		.portfolioStyle {
+			margin: 35px 0;
+		}
+		
+		.portfolioStyle h1 {
+			text-align: center;
+			margin-bottom: 28px;
+		}
+		
+		.portfolioStyle img {
+			float: left;
+			height: auto;
+			width: 100%;
+			
+			/* Box shadow */
+			box-shadow: 0px 3px 2px -1px #eee;
+			-webkit-box-shadow: 0px 3px 2px -1px #eee;
+			-moz-box-shadow: 0px 3px 2px -1px #eee;
+		}
+		
+		.portfolioStyle img:hover {
+			opacity: 0.8;
+			cursor: pointer;
+		}
+	
+	/* cvStyle */	
+		.cvStyle {
+			margin: 35px 0;
+		}
+		
+	/* TopLink */
+		.topLink a {
+			display: inline-block;
+			float: right;
+			margin: 0;
+			line-height: 150%;
+			font-size: 16px;
+			font-weight: 300;
+			text-decoration: none;
+			color: #aeaeae;
+			letter-spacing: 1px;
+		}
+		
+		.topLink a:hover {
+			text-decoration: underline;
+			color: #777;
+		}
+		
+	/* ThumbnailStyle */
+	.thumbnailStyle {
+		width: 100%; 
+		height: 100%; 
+	}
+		
+	/* ContactStyle */
+		
+		.contactStyle h3 {
+			color: #777;
+			text-align: left;
+			font-size: 21px;
+			font-weight: 300;
+		}
+		
+		.contactStyle p {
+			margin: 0;
+			color: #777;
+			text-align: left;
+			font-size: 14px;
+			font-weight: 300;
+			line-height: 28px;
+		}
+		
+		.contactStyle a {
+			color: #777;
+		}
+		
+		.contactStyle span {
+			color: #333;
+		}
+		
+		.contactStyle ul li a {
+			font-weight: 300;
+			line-height: 150%;
+			text-decoration: none;
+		}
+		
+		.contactStyle ul li a:hover {
+			text-decoration: underline;
+		}
+		
+		
+		.contactStyle hr {
+			margin: 14px 0;
+			box-shadow: 0 2px 2px #eee;
+			-moz-box-shadow: 0 2px 2px #eee;
+			-webkit-box-shadow: 0 2px 2px #eee;
+		}
+		
+		.yhteysOtsikko h2 {
+			margin: 35px 0;
+			color: #222;
+			text-align: center;
+			font-weight: 300;
+			letter-spacing: 2px;
+		}
+		
+		
+	/* MainFoooterBand */
+		div.mainFooterBand {
+			background-color: #2f2f2f;
+			position: relative;
+			width: 100%;
+		}
+		
+		div.mainFooterBand p {
+			text-align: center;
+			font-size: 14px;
+			line-height: 150%;
+			font-weight: 300;
+			padding: 35px;
+			margin-bottom: 0;
+			color: #f9f9f9;
+		}
+		
+		.mainFooterBand a {
+			color: #e1e1e1;
+		}
+		
+		.mainFooterBand a:hover {
+			color: #ccc;
+		}
+	
+	/* Bands */
+		.portfolioBand {
+			background-color: #f9f9f9;
+			border-top: 1px solid #eee;
+			border-bottom: 1px solid #eee;
+		}	
+		
+		.portfolioBand p {
+			text-align: justify;
+		}
+		
+		.taitoniBand {
+			background-color: #fff;
+			margin: 35px auto;
+		}
+		
+		.taitoniBand h1 {
+			text-align: center;
+			margin-bottom: 28px;
+		}
+		
+		.taitoniBand h2 {
+			text-align: center;
+			margin-bottom: 28px;
+		}
+		
+		.otayhteyttaBand {
+			background-color: #f9f9f9;
+			border-top: 1px solid #eee;
+		}
+		
+		.focusTextBand {
+			background: #A6D4C5;
+		}
+		
+		.cvBand {
+			background-color: #fff;
+		}
+		
+	/* Full screen */
+		.fullScreen {
+			overflow: hidden;
+			height: 100vh; 
+			height: 1000px;
+			position: relative;
+			background-color: #777;
+			background-image: url("../images/puut.jpg");	/* http://pixabay.com/fi/m%C3%A4nty-mets%C3%A4-pad-mets%C3%A4aukio-misty-273826/ */
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+		}
+		
+		.fullScreen-2 {
+			overflow: hidden;
+			height: 700px;
+			position: relative;
+			background-color: #777;
+			background-image: url("../images/tyopoyta.jpg");	/* http://pixabay.com/fi/ty%C3%B6asema-kotitoimiston-tietokone-405768/ */
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+		}
+		
+		.fullScreen-3 {
+			overflow: hidden;
+			height: 700px;
+			position: relative;
+			background-color: #777;
+			background-image: url("../images/kannettava.jpg");	/* http://pixabay.com/fi/muistikirja-kannettava-tietokone-ty%C3%B6-405755/ */
+			background-repeat: no-repeat;
+			background-position: 100% 100%;
+			background-attachment: fixed;
+		}
+		
+	/* Pakolliset kentät */
+	#pakko {
+		font-size: 14px;
+	}
+	
+	/* BlueBg */
+	.blueBg h3,
+	.blueBg h2 {
+		text-align: left;
+	}
+	
+	.blueBg p {
+		text-align: justify;
+	}
+	
+	
+	/* center */
+	
+	.center {
+		text-align: center;
+	}
+	
+	
+	/* list1 */
+	.list1 {
+		list-style-type: circle;
+		margin-left: 5rem;
+	}
+	
+	.list1 p a {
+		text-decoration: underline;
+	}
+	
+	/* navigation select */
+	.navigation nav select {
+		display: none;
+		height: 36px;
+		width: 100%;
+		margin: 14px auto;
+	}
+
+/* #Media Queries
+================================================== */
+
+	/* Smaller than standard 960 (devices and browsers) */
+	@media only screen and (max-width: 959px) {}
+
+	/* Tablet Portrait size to standard 960 (devices and browsers) */
+	@media only screen and (min-width: 768px) and (max-width: 959px) {}
+
+	/* All Mobile Sizes (devices and browser) */
+	@media only screen and (max-width: 767px) {
+		
+		
+		
+		.fullScreen {
+			background-position: 100% 0%;
+			height: 600px;
+		}
+		
+		.fullScreen-2 {
+			background-position: 70% 80%;
+		}
+	
+		.fullScreen-3 {
+			background-position: 65% 80%;
+		}
+		
+		.imageInfo {
+			float: left !important;
+			font-size: 12px !important;
+		}
+		
+		.navigation nav select {
+			display: block;
+		}
+		
+		.navigation nav ul {
+			display: none;
+		}
+		
+		.focusText h1 {
+			font-size: 50px !important;
+			line-height: 100px !important;
+		}
+		
+		.cvStyle {
+			margin: 35px 5px;
+		}
+		
+		p {
+			font-size: 18px !important;
+		}
+		
+		h1 {
+			font-size: 28px !important;
+		}
+		
+		h2 {
+			font-size: 21px !important;
+			font-weight: 400;
+		}
+		
+		h3 {
+			font-size: 21px !important;
+		}
+		
+		.topLink a {
+			margin-right: 7px;
+		}
+		
+		.portfolioStyle img {
+			margin-bottom: 16px;
+		}
+		
+		.portfolioBand p {
+			text-align: left;
+			margin: 16px 7px;
+		}
+		
+		.blueBg p {
+			margin: auto 7px;
+			text-align: left;
+		}
+		
+		.blueBg h2 {
+			margin: 16px 7px;
+		}
+		
+		.blueBg h4 {
+			margin-top: 16px;
+		}
+		
+		input,
+		textarea {
+			width: 90% !important;
+		}
+		
+		textarea {
+			margin-bottom: 0;
+		}
+		
+		button {
+			width: 90% !important;
+			margin: 16px 0 !important;
+		}
+		
+		.contactStyle h3,
+		.contactStyle p,
+		.contactStyle ul {
+			text-align: center;
+		}
+		
+		.mainFooterBand p {
+			font-size: 14px !important;
+		}
+		
+	}
+
+	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+	@media only screen and (min-width: 480px) and (max-width: 767px) {}
+
+	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+	@media only screen and (max-width: 479px) {}
+
+
